@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>fill-available</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .wp {
+      display: inline-block;
+      border: 1px solid red;
+      margin: 100px;
+      width: -webkit-fill-available;
+    }
+    .inner{
+      width:100px;
+      height:-webkit-fill-available;
+      margin:0 auto;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: pink;
+    }
+    .content{
+      margin: 50px auto;
+      background-color: peachpuff;
+      width:-webkit-fit-content;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wp">你哈的耐啊还是打算大是的阿斯顿爱上打上打上</div>
+  <div style="height: 100px;display: flex;">
+    <div class="inner">22</div>
+    <div class="inner">33</div>
+    <div class="inner">44</div>
+  </div>
+  <div class="content">小火柴的蓝色理想</div>
+</body>
+
+</html>

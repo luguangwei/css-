@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>水波效果</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      width: fit-content; 
+      margin: 0 auto;
+    }
+    .wave-box{
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    .wave-item{
+      width: 500px;
+      height: 500px;
+      background: blue;
+      position: absolute;
+      top: 100px;
+      left: -70px;
+      border-radius: 180px 165px 175px 170px;
+      animation: move 8s linear infinite  -3s;
+      opacity: 0.5;
+    }
+    .wave-item2{
+      top: 100px;
+      background: lightskyblue;
+      animation: move 8s linear infinite  -4.5s;
+    }
+    .wave-item3{
+      top: 110px;
+      background: lightblue;
+      animation: move 8s linear infinite  -2s;
+    }
+    @keyframes move{
+      to{
+        transform: rotate(360deg)
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wave-box">
+    <div class="wave-item"></div>
+    <div class="wave-item wave-item2"></div>
+    <div class="wave-item wave-item3"></div>
+  </div>
+</body>
+
+</html>

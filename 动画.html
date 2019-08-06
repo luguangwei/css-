@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>动画</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .wp {
+      width: 98px;
+      height: 100px;
+      background: url(http://p9.pstatp.com/large/11fe000308f3062949ae) no-repeat;
+      animation: move 1s steps(6) infinite;
+    }
+    @keyframes move{
+      100%{
+        background-position: -590px 0;
+      }
+    }
+    
+    .loading{
+      width: 30px;
+      height: 30px;
+      margin-top: 20px;
+      background: url(https://image.zhangxinxu.com/image/blog/201806/loading-dot.png) no-repeat;
+      animation: step 1.2s steps(8) infinite;
+    }
+    @keyframes step{
+      100%{
+        transform: rotate(360deg)
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <img src='http://p9.pstatp.com/large/11fe000308f3062949ae' />
+  <div class="wp" ></div>
+  <div style='margin-top: 100px;'></div>
+  <img src='https://image.zhangxinxu.com/image/blog/201806/loading-dot.png'/>
+  <div class="loading"></div>
+</body>
+
+</html>

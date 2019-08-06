@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>自定义</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .wp {
+      border: 1px solid red;
+      width: 500px;
+      height: 20px;
+      border-radius: 10px;
+      background-image: linear-gradient(green, gray) ;
+      background-repeat: no-repeat;
+      background-size: calc(var(--percent)*1%) 
+    }
+    .animation{
+      border: 1px solid red;
+      width: 500px;
+      height: 20px;
+      margin: 100px 0;
+      border-radius: 10px;
+      background-image: linear-gradient(green, gray) ;
+      background-repeat: no-repeat;
+      background-size: 0;
+      animation: animation 2s linear forwards ;
+    }
+    @keyframes animation{
+      to{
+        background-size: calc(var(--percent)*1%) 
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wp" style='--percent: 80'></div>
+  <div class="animation" style='--percent: 80'></div>
+</body>
+
+</html>
